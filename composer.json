@@ -1,0 +1,32 @@
+{
+    "name": "sarsport/sarsport-application-bundle",
+    "description": "Provide creation applications for competitions by rogaining",
+    "type": "symfony-bundle",
+    "keywords": ["sport", "application", "rogaining"],
+    "homepage": "https://github.com/SarSport/SarSportApplicationBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Petrov aka fightmaster",
+            "email": "old.fightmaster@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/orm": ">=2.2,<2.4-dev",
+        "symfony/framework-bundle": ">=2.1,<2.2-dev",
+        "symfony/form": ">=2.1,<2.2-dev",
+        "symfony/twig-bundle": ">=2.1,<2.2-dev",
+        "symfony/swiftmailer-bundle": ">=2.1,<2.2-dev",
+        "fightmaster/dao": ">=1.0",
+        "phpoffice/phpexcel": "dev-develop",
+        "sarsport/sarsport-user-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "SarSport\\Bundle\\SarSportApplicationBundle": ""
+        }
+    },
+    "target-dir": "SarSport/Bundle/SarSportApplicationBundle"
+}
