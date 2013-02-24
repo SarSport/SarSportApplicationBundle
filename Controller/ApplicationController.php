@@ -12,6 +12,7 @@
 namespace SarSport\Bundle\SarSportApplicationBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -128,7 +129,7 @@ class ApplicationController extends Controller
         $entity = $service->create();
         $request = $this->getRequest();
         $form    = $this->createForm(new ApplicationType(), $entity);
-        $form->bindRequest($request);
+        $form->bind($request);
 
         if ($form->isValid()) {
             $service->save($entity);
@@ -217,7 +218,7 @@ class ApplicationController extends Controller
         $form = $this->createDeleteForm($id);
         $request = $this->getRequest();
 
-        $form->bindRequest($request);
+        $form->bind($request);
 
         if ($form->isValid()) {
             $service = $this->getApplicationService();
