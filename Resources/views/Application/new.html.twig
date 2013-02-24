@@ -2,7 +2,7 @@
 {% block sub_title %}. Создание заявки{% endblock %}
 {% block sarsport_application_content %}
 {% form_theme form 'SarSportApplicationBundle::form.html.twig' %}
-<h1>{% trans with {'%teamName%': entity.teamName} from 'SarSportApplicationBundle' %}application.header.new{% endtrans %}</h1>
+<h1>{% trans with {'%teamName%': entity.city} from 'SarSportApplicationBundle' %}application.header.new{% endtrans %}</h1>
 
 <form action="{{ path('application_create') }}" method="post" {{ form_enctype(form) }} class="form-inline form-horizontal">
     {{ form_widget(form) }}

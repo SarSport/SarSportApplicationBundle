@@ -47,12 +47,13 @@ application:
     update_application:
       subject: Обновление заявки у %teamName%.
       message: |
-        %teamName% обновили свои данные.
+        %teamName% в составе %firstPlayerFirstName% обновили свои данные.
 
         Подробную информацию о заявке можно получить: %url%
 
   competitions_name:
     multigonka: ОСТАТЬСЯ в ЖИВЫХ
+    xcm: XC марафон
     velogonka: GIANT- Дорога жизни
 
   sex_name:
@@ -64,6 +65,12 @@ application:
     mw: МЖ/ЖЖ
     mr: ММВ
     mwr: МЖВ/ЖЖВ
+    mj: МЮ
+    ma: МЭ
+    mr: МВ
+    wj: ЖЮ
+    wa: ЖЭ
+    wr: ЖВ
 
   class_name:
     sport: СПОРТ

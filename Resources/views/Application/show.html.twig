@@ -26,10 +26,6 @@
         <th>{% trans from 'SarSportApplicationBundle' %}application.group{% endtrans %}</th>
         <td class="sarsport_application_group_{{entity.group}}">{{ sarsport_application_get_group_name(entity.group) | trans([], 'SarSportApplicationBundle') }}</td>
     </tr>
-    <tr>
-        <th>{% trans from 'SarSportApplicationBundle' %}application.additionalMaps{% endtrans %}</th>
-        <td class="sarsport_application_boolean_{{entity.additionalMaps}}">{{ sarsport_application_get_boolean(entity.additionalMaps) | trans([], 'SarSportApplicationBundle') }}</td>
-    </tr>
     {% if sarsport_application_is_owner(entity) %}
     <tr>
         <th>{% trans from 'SarSportApplicationBundle' %}application.phonenumber{% endtrans %}</th>
@@ -55,18 +51,6 @@
     <tr>
         <th>{% trans from 'SarSportApplicationBundle' %}application.t-shirt{% endtrans %}</th>
         <td class="sarsport_application_boolean_{{entity.firstPlayerTShirt}}">{{ sarsport_application_get_boolean(entity.firstPlayerTShirt) | trans([], 'SarSportApplicationBundle') }}{% if (entity.firstPlayerTShirt and entity.firstPlayerTShirtSize) %} / {{ entity.firstPlayerTShirtSize }}{% endif %}</td>
-    </tr>
-    <tr>
-        <th>{% trans from 'SarSportApplicationBundle' %}application.player_fio{% endtrans %}</th>
-        <td>{{ entity.secondPlayerFirstName }} {{ entity.secondPlayerLastName }}</td>
-    </tr>
-    <tr>
-        <th>{% trans from 'SarSportApplicationBundle' %}application.birthday{% endtrans %}</th>
-        <td>{{ entity.secondPlayerBirthday }}</td>
-    </tr>
-    <tr>
-        <th>{% trans from 'SarSportApplicationBundle' %}application.t-shirt{% endtrans %}</th>
-        <td class="sarsport_application_boolean_{{entity.secondPlayerTShirt}}">{{ sarsport_application_get_boolean(entity.secondPlayerTShirt) | trans([], 'SarSportApplicationBundle') }}{% if (entity.secondPlayerTShirt and entity.secondPlayerTShirtSize) %} / {{ entity.secondPlayerTShirtSize }}{% endif %}</td>
     </tr>
     </tbody>
 </table>

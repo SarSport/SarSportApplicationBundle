@@ -32,11 +32,7 @@
                 {% endif %}
                 <th>{% trans from 'SarSportApplicationBundle' %}application.player_fio{% endtrans %}</th>
                 <th title="{% trans from 'SarSportApplicationBundle' %}application.birthday{% endtrans %}">{% trans from 'SarSportApplicationBundle' %}application.birthday_short{% endtrans %}</th>
-                <th>{% trans from 'SarSportApplicationBundle' %}application.player_fio{% endtrans %}</th>
-                <th title="{% trans from 'SarSportApplicationBundle' %}application.birthday{% endtrans %}">{% trans from 'SarSportApplicationBundle' %}application.birthday_short{% endtrans %}</th>
-                <th title="{% trans from 'SarSportApplicationBundle' %}application.additionalMaps{% endtrans %}">{% trans from 'SarSportApplicationBundle' %}application.additionalMaps_short{% endtrans %}</th>
-                <th title="{% trans from 'SarSportApplicationBundle' %}application.t-shirt{% endtrans %}">{% trans from 'SarSportApplicationBundle' %}application.t-shirt_short{% endtrans %}1</th>
-                <th title="{% trans from 'SarSportApplicationBundle' %}application.t-shirt{% endtrans %}">{% trans from 'SarSportApplicationBundle' %}application.t-shirt_short{% endtrans %}2</th>
+                <th title="{% trans from 'SarSportApplicationBundle' %}application.t-shirt{% endtrans %}">{% trans from 'SarSportApplicationBundle' %}application.t-shirt_short{% endtrans %}</th>
             </tr>
             </thead>
             <tbody>
@@ -53,11 +49,7 @@
                 {% endif %}
                 <td>{{ entity.firstPlayerFirstName }} {{ entity.firstPlayerLastName }}</td>
                 <td>{{ entity.firstPlayerBirthday }}</td>
-                <td>{{ entity.secondPlayerFirstName }} {{ entity.secondPlayerLastName }}</td>
-                <td>{{ entity.secondPlayerBirthday}}</td>
-                <td class="sarsport_application_boolean_{{entity.additionalMaps}}">{{ sarsport_application_get_boolean(entity.additionalMaps) | trans([], 'SarSportApplicationBundle') }}</td>
                 <td class="sarsport_application_boolean_{{entity.firstPlayerTShirt}}">{{ sarsport_application_get_boolean(entity.firstPlayerTShirt) | trans([], 'SarSportApplicationBundle') }}{% if (entity.firstPlayerTShirt and entity.firstPlayerTShirtSize) %} / {{ entity.firstPlayerTShirtSize }}{% endif %}</td>
-                <td class="sarsport_application_boolean_{{entity.secondPlayerTShirt}}">{{ sarsport_application_get_boolean(entity.secondPlayerTShirt) | trans([], 'SarSportApplicationBundle') }}{% if (entity.secondPlayerTShirt and entity.secondPlayerTShirtSize) %} / {{ entity.secondPlayerTShirtSize }}{% endif %}</td>
             </tr>
             {% endfor %}
             </tbody>

@@ -43,9 +43,13 @@
             <argument type="service" id="router" />
             <argument type="service" id="twig" />
             <argument type="collection">
-                <argument>old.fightmaster@gmail.com</argument>
+                <argument>xcm.sarsport.ru@gmail.com</argument>
             </argument>
 
+        </service>
+        <service id="sarsport_application.listener.application_teamm_name" class="SarSport\Bundle\SarSportApplicationBundle\EventListener\ApplicationTeamNameListener">
+            <!-- TODO: 2.1 <tag name="kernel.event_subscriber" /> -->
+            <tag name="kernel.event_listener" event="sarsport_application.application.pre_persist" method="setTeamName" />
         </service>
     </services>
 </container>

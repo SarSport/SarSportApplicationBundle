@@ -67,8 +67,8 @@ class ApplicationExtension extends Twig_Extension
             case Application::RACE_MULTIGONKA_SLUG:
                 return Application::RACE_MULTIGONKA_NAME;
                 break;
-            case Application::RACE_VELOGONKA_SLUG:
-                return Application::RACE_VELOGONKA_NAME;
+            case Application::RACE_XCM_SLUG:
+                return Application::RACE_XCM_NAME;
                 break;
             default:
                 return '';
@@ -106,17 +106,23 @@ class ApplicationExtension extends Twig_Extension
     public function getGroupName($group)
     {
         switch ($group) {
-            case Application::APPLICATION_GROUP_M_VALUE:
-                return Application::APPLICATION_GROUP_M_NAME;
+            case Application::APPLICATION_GROUP_MJ_VALUE:
+                return Application::APPLICATION_GROUP_MJ_NAME;
+                break;
+            case Application::APPLICATION_GROUP_MA_VALUE:
+                return Application::APPLICATION_GROUP_MA_NAME;
                 break;
             case Application::APPLICATION_GROUP_MR_VALUE:
                 return Application::APPLICATION_GROUP_MR_NAME;
                 break;
-            case Application::APPLICATION_GROUP_MW_VALUE:
-                return Application::APPLICATION_GROUP_MW_NAME;
+            case Application::APPLICATION_GROUP_WJ_VALUE:
+                return Application::APPLICATION_GROUP_WJ_NAME;
                 break;
-            case Application::APPLICATION_GROUP_MWR_VALUE:
-                return Application::APPLICATION_GROUP_MWR_NAME;
+            case Application::APPLICATION_GROUP_WA_VALUE:
+                return Application::APPLICATION_GROUP_WA_NAME;
+                break;
+            case Application::APPLICATION_GROUP_WR_VALUE:
+                return Application::APPLICATION_GROUP_WR_NAME;
                 break;
             default:
                 return '';

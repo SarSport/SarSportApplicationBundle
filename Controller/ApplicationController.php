@@ -11,6 +11,7 @@
 
 namespace SarSport\Bundle\SarSportApplicationBundle\Controller;
 
+use SarSport\Bundle\SarSportApplicationBundle\Form\XcmApplicationType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -110,7 +111,7 @@ class ApplicationController extends Controller
         $service = $this->getApplicationService();
         $entity = $service->create();
         $this->fillDefaultData($entity);
-        $form   = $this->createForm(new ApplicationType(), $entity);
+        $form   = $this->createForm(new XcmApplicationType(), $entity);
 
         return $this->render('SarSportApplicationBundle:Application:new.html.twig', array(
             'entity' => $entity,
@@ -128,7 +129,7 @@ class ApplicationController extends Controller
         $service = $this->getApplicationService();
         $entity = $service->create();
         $request = $this->getRequest();
-        $form    = $this->createForm(new ApplicationType(), $entity);
+        $form    = $this->createForm(new XcmApplicationType(), $entity);
         $form->bind($request);
 
         if ($form->isValid()) {
@@ -160,7 +161,7 @@ class ApplicationController extends Controller
             throw $this->createNotFoundException('Unable to find Application entity.');
         }
 
-        $editForm = $this->createForm(new ApplicationType(), $entity);
+        $editForm = $this->createForm(new XcmApplicationType(), $entity);
         $deleteForm = $this->createDeleteForm($id);
 
         return $this->render('SarSportApplicationBundle:Application:edit.html.twig', array(
@@ -186,7 +187,7 @@ class ApplicationController extends Controller
             throw $this->createNotFoundException('Unable to find Application entity.');
         }
 
-        $editForm   = $this->createForm(new ApplicationType(), $entity);
+        $editForm   = $this->createForm(new XcmApplicationType(), $entity);
         $deleteForm = $this->createDeleteForm($id);
 
         $request = $this->getRequest();

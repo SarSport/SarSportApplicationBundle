@@ -10,7 +10,7 @@
             <generator strategy="AUTO"/>
         </id>
         <field name="competition" type="string" column="competition" length="255"/>
-        <field name="teamName" type="string" column="team_name" length="50"/>
+        <field name="teamName" type="string" column="team_name" length="50" nullable="true"/>
         <field name="phonenumber" type="string" column="phonenumber" length="100"/>
         <field name="firstPlayerFirstName" type="string" column="first_player_firstname" length="50"/>
         <field name="firstPlayerLastName" type="string" column="first_player_lastname" length="50"/>

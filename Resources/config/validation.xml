@@ -6,9 +6,6 @@
 
     <class name="SarSport\Bundle\SarSportApplicationBundle\Entity\Application">
         <property name="teamName">
-            <constraint name="NotBlank">
-                <option name="message">application.form.teamName.blank</option>
-            </constraint>
             <constraint name="MinLength">
                 <option name="limit">3</option>
                 <option name="message">application.form.teamName.short</option>
@@ -134,9 +131,6 @@
         </property>
 
         <property name="secondPlayerSex">
-            <constraint name="NotBlank">
-                <option name="message">application.form.sex.blank</option>
-            </constraint>
             <constraint name="Min">
                 <option name="limit">1</option>
                 <option name="message">application.form.sex.short</option>

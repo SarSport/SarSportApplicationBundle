@@ -47,12 +47,13 @@ application:
     update_application:
       subject: Updating an application for %teamName%.
       message: |
-        %teamName% updated their data.
+        %teamName% in the %firstPlayerFirstName% updated their data.
 
         For more information on the application may be obtained: %url%
 
   competitions_name:
     multigonka: STAY ALIVE
+    xcm: XC marathon
     velogonka: GIANT- The Road of Life
 
   sex_name:
@@ -60,10 +61,16 @@ application:
     woman: woman
 
   group_name:
-    m: MM
+    mm: MM
     mw: MW/WW
-    mr: MMR
+    mmr: MMR
     mwr: MWR/WWR
+    mj: MJ
+    ma: MA
+    mr: MR
+    wj: WJ
+    wa: WA
+    wr: WR
   class_name:
     sport: SPORT
     tourism: TOURISM

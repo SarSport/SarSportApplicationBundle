@@ -18,7 +18,7 @@ use SarSport\Bundle\SarSportApplicationBundle\Entity\Application;
 /**
  * @author Dmitry Petrov aka fightmaster <old.fightmaster@gmail.com>
  */
-class CompetitionType extends AbstractType
+class XcmGroupType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -37,7 +37,12 @@ class CompetitionType extends AbstractType
     {
         $resolver->setDefaults(array(
             'choices'=> array(
-                Application::RACE_MULTIGONKA_SLUG => Application::RACE_MULTIGONKA_NAME
+                Application::APPLICATION_GROUP_MJ_VALUE => Application::APPLICATION_GROUP_MJ_NAME,
+                Application::APPLICATION_GROUP_MA_VALUE => Application::APPLICATION_GROUP_MA_NAME,
+                Application::APPLICATION_GROUP_MR_VALUE => Application::APPLICATION_GROUP_MR_NAME,
+                Application::APPLICATION_GROUP_WJ_VALUE => Application::APPLICATION_GROUP_WJ_NAME,
+                Application::APPLICATION_GROUP_WA_VALUE => Application::APPLICATION_GROUP_WA_NAME,
+                Application::APPLICATION_GROUP_WR_VALUE => Application::APPLICATION_GROUP_WR_NAME
             )
         ));
     }
