@@ -31,10 +31,7 @@ class ApplicationTeamNameListener implements EventSubscriberInterface
     public function setTeamName(ApplicationEvent $event)
     {
         $application = $event->getApplication();
-
-        if ($application->getId() != null) {
-            $application->setTeamName($application->getCity());
-        }
+        $application->setTeamName($application->getCity());
     }
 
     /**
