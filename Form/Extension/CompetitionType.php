@@ -37,8 +37,7 @@ class CompetitionType extends AbstractType
     {
         $resolver->setDefaults(array(
             'choices'=> array(
-                Application::RACE_MULTIGONKA_SLUG => Application::RACE_MULTIGONKA_NAME,
-                Application::RACE_VELOGONKA_SLUG => Application::RACE_VELOGONKA_NAME
+                Application::RACE_MULTIGONKA_SLUG => Application::RACE_MULTIGONKA_NAME
             )
         ));
     }

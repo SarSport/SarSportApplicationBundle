@@ -38,9 +38,7 @@ class GroupType extends AbstractType
         $resolver->setDefaults(array(
             'choices'=> array(
                 Application::APPLICATION_GROUP_M_VALUE => Application::APPLICATION_GROUP_M_NAME,
-                Application::APPLICATION_GROUP_MW_VALUE => Application::APPLICATION_GROUP_MW_NAME,
-                Application::APPLICATION_GROUP_MR_VALUE => Application::APPLICATION_GROUP_MR_NAME,
-                Application::APPLICATION_GROUP_MWR_VALUE => Application::APPLICATION_GROUP_MWR_NAME
+                Application::APPLICATION_GROUP_MW_VALUE => Application::APPLICATION_GROUP_MW_NAME
             )
         ));
     }

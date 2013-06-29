@@ -59,7 +59,7 @@ class YearType extends AbstractType
     private static function getYears()
     {
         $years = array();
-        for ($i = date('Y')-90; $i <= date('Y'); $i++) {
+        for ($i = date('Y')-80; $i <= date('Y'); $i++) {
             $years[$i] = $i;
         }
 
