@@ -67,10 +67,13 @@ application:
     mwr: MWR/WWR
     mj: MJ
     ma: MA
+    ms: MS
     mr: MR
     wj: WJ
     wa: WA
+    ws: WS
     wr: WR
   class_name:
     sport: SPORT
+    elite: ELITE
     tourism: TOURISM

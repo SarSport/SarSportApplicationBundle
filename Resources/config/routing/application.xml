@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
     <route id="application_by_competition" pattern="/show/{competition}">
         <default key="_controller">SarSportApplicationBundle:Application:showApplicationsByCompetition</default>
-        <requirement key="competition">xcm-2013</requirement>
+        <requirement key="competition">xcm-2014</requirement>
     </route>
     <route id="download_application_by_competition" pattern="/download/{competition}">
         <default key="_controller">SarSportApplicationBundle:Application:downloadApplicationsByCompetition</default>
-        <requirement key="competition">xcm-2013</requirement>
+        <requirement key="competition">xcm-2014</requirement>
     </route>
 
     <route id="application_show" pattern="/{id}/show">

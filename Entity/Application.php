@@ -22,7 +22,7 @@ use SarSport\Bundle\SarSportApplicationBundle\Model\SignedApplicationInterface;
 class Application extends BaseApplication implements SignedApplicationInterface
 {
     const RACE_MULTIGONKA_SLUG = 'stay-alive';
-    const RACE_XCM_SLUG = 'xcm-2013';
+    const RACE_XCM_SLUG = 'xcm-2014';
     const RACE_MULTIGONKA_NAME = 'application.competitions_name.multigonka';
     const RACE_XCM_NAME = 'application.competitions_name.xcm';
 
@@ -37,9 +37,11 @@ class Application extends BaseApplication implements SignedApplicationInterface
     const APPLICATION_GROUP_MWR_NAME = 'application.group_name.mwr';
     const APPLICATION_GROUP_MJ_NAME = 'application.group_name.mj';
     const APPLICATION_GROUP_MA_NAME = 'application.group_name.ma';
+    const APPLICATION_GROUP_MS_NAME = 'application.group_name.ms';
     const APPLICATION_GROUP_MR_NAME = 'application.group_name.mr';
     const APPLICATION_GROUP_WJ_NAME = 'application.group_name.wj';
     const APPLICATION_GROUP_WA_NAME = 'application.group_name.wa';
+    const APPLICATION_GROUP_WS_NAME = 'application.group_name.ws';
     const APPLICATION_GROUP_WR_NAME = 'application.group_name.wr';
     const APPLICATION_GROUP_MM_VALUE = 1;
     const APPLICATION_GROUP_MW_VALUE = 2;
@@ -47,14 +49,18 @@ class Application extends BaseApplication implements SignedApplicationInterface
     const APPLICATION_GROUP_MWR_VALUE = 4;
     const APPLICATION_GROUP_MJ_VALUE = 5;
     const APPLICATION_GROUP_MA_VALUE = 6;
+    const APPLICATION_GROUP_MS_VALUE = 11;
     const APPLICATION_GROUP_MR_VALUE = 7;
     const APPLICATION_GROUP_WJ_VALUE = 8;
     const APPLICATION_GROUP_WA_VALUE = 9;
     const APPLICATION_GROUP_WR_VALUE = 10;
+    const APPLICATION_GROUP_WS_VALUE = 12;
 
+    const APPLICATION_CLASS_ELITE_NAME = 'application.class_name.elite';
     const APPLICATION_CLASS_SPORT_NAME = 'application.class_name.sport';
     const APPLICATION_CLASS_TOURISM_NAME = 'application.class_name.tourism';
     const APPLICATION_CLASS_SPORT_VALUE = 1;
+    const APPLICATION_CLASS_ELITE_VALUE = 3;
     const APPLICATION_CLASS_TOURISM_VALUE = 2;
 
     /**

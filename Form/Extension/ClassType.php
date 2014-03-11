@@ -37,6 +37,7 @@ class ClassType extends AbstractType
     {
         $resolver->setDefaults(array(
             'choices'=> array(
+                Application::APPLICATION_CLASS_ELITE_VALUE => Application::APPLICATION_CLASS_ELITE_NAME,
                 Application::APPLICATION_CLASS_SPORT_VALUE => Application::APPLICATION_CLASS_SPORT_NAME,
                 Application::APPLICATION_CLASS_TOURISM_VALUE => Application::APPLICATION_CLASS_TOURISM_NAME
             )

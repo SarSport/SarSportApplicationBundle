@@ -88,6 +88,9 @@ class ApplicationExtension extends Twig_Extension
             case Application::APPLICATION_CLASS_SPORT_VALUE:
                 return Application::APPLICATION_CLASS_SPORT_NAME;
                 break;
+            case Application::APPLICATION_CLASS_ELITE_VALUE:
+                return Application::APPLICATION_CLASS_ELITE_NAME;
+                break;
             case Application::APPLICATION_CLASS_TOURISM_VALUE:
                 return Application::APPLICATION_CLASS_TOURISM_NAME;
                 break;

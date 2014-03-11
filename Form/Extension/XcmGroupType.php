@@ -38,9 +38,11 @@ class XcmGroupType extends AbstractType
         $resolver->setDefaults(array(
             'choices'=> array(
                 Application::APPLICATION_GROUP_MJ_VALUE => Application::APPLICATION_GROUP_MJ_NAME,
+                Application::APPLICATION_GROUP_MS_VALUE => Application::APPLICATION_GROUP_MS_NAME,
                 Application::APPLICATION_GROUP_MA_VALUE => Application::APPLICATION_GROUP_MA_NAME,
                 Application::APPLICATION_GROUP_MR_VALUE => Application::APPLICATION_GROUP_MR_NAME,
                 Application::APPLICATION_GROUP_WJ_VALUE => Application::APPLICATION_GROUP_WJ_NAME,
+                Application::APPLICATION_GROUP_WS_VALUE => Application::APPLICATION_GROUP_WS_NAME,
                 Application::APPLICATION_GROUP_WA_VALUE => Application::APPLICATION_GROUP_WA_NAME,
                 Application::APPLICATION_GROUP_WR_VALUE => Application::APPLICATION_GROUP_WR_NAME
             )

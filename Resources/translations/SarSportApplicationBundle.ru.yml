@@ -67,11 +67,14 @@ application:
     mwr: МЖВ/ЖЖВ
     mj: МЮ
     ma: МЭ
+    ms: МC
     mr: МВ
     wj: ЖЮ
     wa: ЖЭ
+    ws: ЖC
     wr: ЖВ
 
   class_name:
     sport: СПОРТ
+    elite: ЭЛИТА
     tourism: ТУРИЗМ
