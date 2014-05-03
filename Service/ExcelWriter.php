@@ -110,7 +110,7 @@ class ExcelWriter
             $this->worksheet->setCellValueByColumnAndRow(14, $i, $this->translator->trans($this->helper->getBoolean($application->getStatus()), array(), 'SarSportApplicationBundle'));
             $this->worksheet->setCellValueByColumnAndRow(15, $i, $application->getPaymentValue());
             $this->worksheet->setCellValueByColumnAndRow(16, $i, $application->getPaymentDescription());
-            $this->worksheet->setCellValueByColumnAndRow(17, $i, $application->getCreatedAt());
+            $this->worksheet->setCellValueByColumnAndRow(17, $i, $application->getCreatedAt()->format('d.m.Y'));
             $i++;
         }
     }
