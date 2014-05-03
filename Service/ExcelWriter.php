@@ -110,6 +110,7 @@ class ExcelWriter
             $this->worksheet->setCellValueByColumnAndRow(14, $i, $this->translator->trans($this->helper->getBoolean($application->getStatus()), array(), 'SarSportApplicationBundle'));
             $this->worksheet->setCellValueByColumnAndRow(15, $i, $application->getPaymentValue());
             $this->worksheet->setCellValueByColumnAndRow(16, $i, $application->getPaymentDescription());
+            $this->worksheet->setCellValueByColumnAndRow(17, $i, $application->getCreatedAt());
             $i++;
         }
     }
@@ -165,5 +166,7 @@ class ExcelWriter
         $this->worksheet->getColumnDimensionByColumn(15)->setWidth(6);
         $this->worksheet->setCellValueByColumnAndRow(16, 1, 'Описание');
         $this->worksheet->getColumnDimensionByColumn(16)->setWidth(50);
+        $this->worksheet->setCellValueByColumnAndRow(17, 1, 'Заявка');
+        $this->worksheet->getColumnDimensionByColumn(17)->setWidth(50);
     }
 }

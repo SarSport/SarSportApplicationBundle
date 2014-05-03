@@ -47,6 +47,7 @@ class ApplicationManager extends DoctrineManager
             ->where('a.competition = :competition')
             ->orderBy('a.class')
             ->addOrderBy('a.group')
+            ->addOrderBy('a.createdAt')
             ->setParameter('competition', $competition)
             ->getQuery();
         return $query->execute();
