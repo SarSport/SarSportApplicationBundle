@@ -21,7 +21,7 @@ use SarSport\Bundle\SarSportApplicationBundle\Model\SignedApplicationInterface;
  */
 class Application extends BaseApplication implements SignedApplicationInterface
 {
-    const RACE_MULTIGONKA_SLUG = 'stay-alive-2013';
+    const RACE_MULTIGONKA_SLUG = 'stay-alive-2014';
     const RACE_MULTIGONKA_NAME = 'application.competitions_name.multigonka';
     const RACE_VELOGONKA_NAME = 'application.competitions_name.velogonka';
 
